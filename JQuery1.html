@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+        <h2 class="txt" style="font-size: 400%;">SRAVANTHI</h2>
+        <h2 class="txt" style="font-size: 400%;">SHIVANI</h2>
+        <h2 style="font-size: 400%;">NAGU</h2>
+        <h2 style="font-size: 400%;">SARVANI</h2>
+    
+        <!-- <button id="btn" onclick="fn1()">Click Me</button> -->
+        <!-- <button>Submit</button> -->
+         <button>Show</button>
+         <button>Hide</button>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script> 
+    // $("document").ready(function () {
+    //     $("button").hover(fn1);
+    //     function fn1() {
+    //         $(".txt").fadeToggle(1000);
+    //     }});
+    // $("document").ready(function () {
+    //     $("button").mouseenter(fn1);
+    //     function fn1() {
+    //         $(".txt").fadeOut(1000);
+    //         $(".txt").fadeIn(1000);
+    //     }
+    //     });
+    // $("document").ready(function () {
+    //     $("button").mouseenter(fn1);
+    //     function fn1() { 
+    //         $(".txt").fadeOut(1000);
+    //     }
+    //     $("button").mouseleave(fn2);
+    //     function fn2(){
+    //         $(".txt").fadeIn(1000);
+    //     }
+    //     });
+    // $("document").ready(function () {
+    //     $("button").mouseenter(fn1);
+    //     $("button").mouseout(fn2);
+    //     $("button").hover(fn1,fn2);
+    //     function fn1() { 
+    //         $(".txt").fadeOut(1000);
+    //     }
+    //     function fn2(){
+    //         $(".txt").fadeIn(1000);
+    //     }
+    //     });
+    $("document").ready(function(){
+        $("button:even").click(function (){
+            $(".txt").show("fast").fadeOut(3000).fadeIn(2000);
+            //slideup,slidedown,show,hide
+        })
+        $("button:odd").hover(function (){
+            $(".txt").fadeOut(3000).hide(1000);
+        })
+    })   
+</script>
+</html>

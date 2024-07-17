@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2 class="txt" style="font-size: 400%;">SRAVANTHI</h2>
+    <h2 class="txt" style="font-size: 400%;">SHIVANI</h2>
+    <h2 style="font-size: 400%;">NAGU</h2>
+    <h2 style="font-size: 400%;">SARVANI</h2>
+
+    <!-- <button id="btn" onclick="fn1()">Click Me</button> -->
+    <button>Submit</button>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script>
+    //the method ready is used that the button wil get accessed when the page is completely loaded
+    $("document").ready(function () {
+        //$("button").click(fn1);
+        $("button").dblclick(fn1); //- we have to click the button twice
+        function fn1() {
+            $(".txt").fadeToggle(1000);
+        }
+    });
+    // $(".classname").function(); - hides all the content inside the same class
+    // $("#idname,#idname").function(); - it hides the content inside both the id names
+    // $("div >p").function(); - it hides the content in all p tag in the div
+    // $("tagName:first").function(); - it hides the first tag content
+    // $("tagName:even").function(); - it hides the even tag positions content count starts with 0
+
+</script>
+
+</html>
